@@ -137,3 +137,81 @@ echo"<br>";
 echo $x;
 
 ?>
+
+<?php
+echo"<br>";
+$x="Meu Teste";
+echo substr($x, 6);
+?>
+<?php
+//<--*Caracteres de escape*-->
+//\'	Single Quote	
+//\"	Double Quote	
+//\$	PHP variables	
+//\n	New Line	
+//\r	Carriage Return	
+//\t	Tab	
+//\f	Form Feed	
+//\ooo	Octal value	
+//\xhh	Hex value
+?>
+<?php
+echo"<br>";
+$x="Somos os chamados \"Vikings\" do norte"; 
+echo $x;
+?>
+<?php
+echo"<br>";
+$a=5;
+$b=5.34;
+$c="253";
+$d=1.9e411;
+var_dump($a);
+echo"<br>";
+var_dump($b);
+echo"<br>";
+var_dump($c);
+echo"<br>";
+var_dump($d);
+echo"<br>";
+?>
+<?php
+echo"<br>";
+//verifique se a variável é úm número inteiro
+$x=5985;
+var_dump(is_int($x));
+echo"<br>";
+//verificar novamente
+$x=3.14;
+var_dump(is_int($x));
+echo"<br>";
+$x=10.123;
+var_dump(is_float($x));
+echo"<br>";
+$x=1.9e411;
+var_dump(is_infinite($x));
+echo"<br>";
+?>
+<?php
+echo"<br>";
+$a=25.232;
+$b=5489;
+$c="Meu Teste";
+$d=12.5e896;
+var_dump(is_string($a));
+echo"<br>";
+var_dump(is_string($b));
+echo"<br>";
+var_dump(is_string($c));
+echo"<br>";
+var_dump(is_string($d));
+echo"<br>";
+?>
+<?php
+echo"<br>";
+$x=120.45075;
+$int_cast=(int)$x;
+echo $int_cast;
+echo"<br>";
+echo"<br>";
+?>
