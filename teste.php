@@ -215,3 +215,123 @@ echo $int_cast;
 echo"<br>";
 echo"<br>";
 ?>
+<?php
+echo"<br>";
+$octeto = 172;
+$mascara = 248;
+$valor = $octeto & $mascara;
+echo"<br> Aplicando a operação AND entre a máscara e octeto com valor $valor";
+echo"<br>";
+?>
+<?php
+echo"<br>";
+$valor=16;
+if ($valor==15){
+	echo"<br> Valor é 15";
+}
+elseif  ($valor>= 10){
+	echo "Valor é maior ou igual a 10";
+} 
+else {
+	echo"Valor é menor que 10";
+	
+}
+?>
+<?php
+echo"<br>";
+$v="Fabio";
+$nome= $v . " dos Reis";
+echo $nome;
+?>
+<?php
+echo"<br>";
+$valor= 10;
+if ($valor=== "10") {
+	echo "valor é string";
+	
+}
+else {
+	echo "valor não é string ";
+}
+echo "<br><br>";
+echo "Agora, fazendo cast no valor atribuído a variável: <br>";
+$valor = (string) 10;
+if ($valor ==="10") {
+	echo "Valor não é string";
+} 
+else {
+	echo "Valor não é string";
+}
+echo"<br>";
+?>
+<?php
+echo"<br>";
+$a = 10;
+$b = 20;
+echo ($a == 10) && ($b == 20);
+echo "<br>";
+if (($a == 10) && ($b == 20)) {
+	echo "Ambos os valores estão corretos <br>";
+}	
+if (($a == 20) && ($b == 20)){
+	echo "Um dos valores está correto <br>";
+}	
+if (($a == 10) && ($b == 10)){
+	echo "Um dos valores está correto <br>";
+}
+echo"<br>";	
+?>
+<?php
+echo"<br>";
+$a= 3+5 * 4;
+$b= (3+5) * 4;
+echo " O resultado do cálculo é $a";
+echo"<br>";
+echo " O resultado do cálculo é $b";
+?>
+<?php
+echo"<br>";
+$a= 10;
+$b= 9;
+$c= 5;
+$resultado = ($a+$b+$c)/3;
+echo "<br> A média é : $resultado";
+
+?>
+<?php
+echo"<br>";
+$a= 10;
+$b= 9;
+$c= 5;
+$resultado = ($a+$b+$c)/3;
+if ($resultado  >=7) {
+	echo " Aluno aprovado <br>";
+}	
+ else {
+	echo " Aluno reprovado <br>";
+}
+?>
+<?php
+echo"<br>";
+$a= 5;
+$b= 5;
+$c= 5;
+$d= 5;
+$resultado = ($a+$b+$c+$d)/4;
+	echo "<br>"; 
+	$mensagem='';
+if ($resultado >=7 && $resultado!=10) {
+	$mensagem= " Aluno foi aprovado<br>";
+}	
+ elseif ($resultado==0) {
+	 $mensagem= " Estude mais, você não acertou nada! <br>";
+ }
+	elseif ($resultado==10) {
+		$mensagem= " Parabéns ! Aprovado com nota máxima! <br>";
+	}
+elseif ($resultado <=7) {
+	$mensagem= " O aluno foi reprovado ! <br>";
+	echo "Sua nota foi: $resultado . $mensagem"; 
+}
+else
+?>
