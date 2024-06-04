@@ -335,3 +335,91 @@ elseif ($resultado <=7) {
 }
 else
 ?>
+<?php
+echo"<br>";
+$num= 20;
+
+if ($num >= 20 && $num != 0) {
+	echo "O número é menor que 20";
+}
+elseif  ($num <= 20 ) {
+	echo "O número é maior que 20";
+}
+elseif  ($num ==20) {
+	echo "O número é igual a 20";
+}
+
+else
+echo"<br>";
+?>
+<?php
+echo"<br>";
+echo"<br>";
+$num= 10;
+
+if ($num >=16  && $num <= 65) {
+	echo "O aluno pode tomar a medicação!";
+}
+elseif ($num <10 ) {
+	echo" O aluno está proíbido de usar o medicamento";
+}	
+elseif ($num > 65 ) {
+	echo" O aluno pode tomar a medicação mas com restrições";
+}
+elseif ($num >10 && $num <=15) {
+	echo "O aluno deve procurar um médico!";
+}
+else
+
+?>
+<?php
+echo"<br>";		
+$a= 5;			// inteiro
+$b= 3.14;		// float
+$c= "hoje";		// string
+$d= true;		// booleano
+$e= null;		// null
+
+//Conversão para string , float ,string, booleano, null. Para alterar o tipo de conversão basta trocar a variável que está dentro do parêntese 
+$a = (string) $a;
+$b = (string) $b;
+$c = (string) $c;
+$d = (string) $d;
+$e = (string) $e;
+
+// Mostrar ao usuário
+echo"<br>";	
+var_dump ($a);echo"<br>";
+var_dump ($b);echo"<br>";
+var_dump ($c);echo"<br>";
+var_dump ($d);echo"<br>";
+var_dump ($e);echo"<br>";
+echo"<br>";	
+
+?>
+<?php
+echo"<br>";	
+$a = array ("Volvo", "BMW", "Toyota"); // array indexado
+$b = array ("Peter">="30", "João" >="40", "Carlos">="50"); //array associativo
+
+$a= (object) $a;
+$b= (object) $b;
+echo"<br>";
+var_dump ($a);echo"<br>";
+var_dump ($b);echo"<br>";
+
+?>
+<?php
+echo"<br>";
+echo (pi());
+echo"<br>";
+echo (min(0, 20, 130, -10. -230));
+echo"<br>";
+echo (max(0, 25, -230, 100, -530));
+echo"<br>";
+echo (sqrt(64))."<br>"; // sqrt = raiz quadrada
+echo (sqrt(4))."<br>"; // sqrt = raiz quadrada
+echo (round(0.60))."<br>"; // arrendondar um número
+echo (rand()). "<br>"; // gera números aleatórios 
+echo (rand(10, 50)). "<br>"; // gera números aleatórios 
+?>
